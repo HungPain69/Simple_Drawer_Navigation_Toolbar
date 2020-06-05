@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_Year"
+            android:title="Item1" />
+        <item
+            android:id="@+id/item_Month"
+            android:title="Item2"
+            />
+        <item
+            android:id="@+id/item_Week"
+            android:title="Item3" />
+        <item
+            android:id="@+id/item_Day"
+            android:title="Item4" />
+        <item
+            android:id="@+id/item_Reminder"
+            android:title="Item5" />
+    </group>
+
+</menu>
