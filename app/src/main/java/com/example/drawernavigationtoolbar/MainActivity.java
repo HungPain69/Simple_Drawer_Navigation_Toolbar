@@ -32,7 +32,20 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
+        mToolbar = findViewById(R.id.toolbar);
+        mToolbar.setNavigationIcon(R.drawable.ic_menu);
+        setSupportActionBar(mToolbar);
+
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(mToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         return false;
