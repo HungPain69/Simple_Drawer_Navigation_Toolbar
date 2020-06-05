@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         mNavigationView = findViewById(R.id.navigation_view);
         mToolbar = findViewById(R.id.toolbar);
 
-        
+        mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
+        mDrawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
 
     }
     @Override
